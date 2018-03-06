@@ -6,6 +6,7 @@ import MachinesList from './MachinesList.vue'
 import MachinesMap from './MachinesMap.vue'
 import MachineMachine from './MachineMachine.vue'
 
+Vue.component("listemachine",MachineMachine);
 
 Vue.use(VueRouter);
 

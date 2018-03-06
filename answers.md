@@ -95,7 +95,8 @@ Vue.use(VueRouter)
 
 **Question :** quelle est la différence entre `npm install vue-router` et `npm install --save vue-router` ? Laquelle est à privilégier ici ?
 
-**Votre réponse :**
+**Votre réponse :**L'option --save a demandé à NPM d'inclure automatiquement le paquet dans la section dependence de votre package.json, nous épargnant ainsi une étape supplémentaire,lors de la recuperation du projet et de sa réinstalation.
+Il vaut mieux privilégier le--save pour plus de simplicité pour les personne qui recupére le projet.
 
 ##### 4.2) Configuration.
 
@@ -203,7 +204,7 @@ Modifiez le composant `MachinesList` pour que ces datas retournent l'objet suiva
 
 **Question :** Remarquez que nous avons ajouté une clef `id` à nos objets, pourquoi ?
 
-**Votre réponse :**
+**Votre réponse :**Pour pouvoir indiquer l'id comme clef d'entrée pour la v-for
 
 * Modifiez un peu le style pour que les éléments de la liste soient mieux visibles, voici un exemple de ce que vous pourriez obtenir :
 
