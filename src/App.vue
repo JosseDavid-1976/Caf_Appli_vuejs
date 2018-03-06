@@ -5,14 +5,21 @@
         <h1>{{yourchoice}}</h1>
         <button @click="onMachinesListClick">Consulter la liste des machines</button>
         <button @click="onMapClick">Voir la carte</button>
-        <ListeMachine></ListeMachine>
-        <MachinesMap></MachinesMap>
+        <!--<ListeMachine></ListeMachine>-->
+        <!--<MachinesMap></MachinesMap>-->
+
+        <div>
+            <router-link to="/list">Consulter la liste des machines</router-link>
+            <router-link to="/map">Voir la carte</router-link>
+
+
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 
 <script>
-    import MachinesList from './MachinesList.vue'
-    import MachinesMap from './MachinesMap.vue'
+
     export default {
         name: 'app',
         data() {
@@ -22,17 +29,17 @@
             }
         },
         methods: {
-            onMachinesListClick (){
+            onMachinesListClick() {
                 window.alert("Pif Paf ");
             },
-            onMapClick () {
+            onMapClick() {
                 window.alert("Pouf Paf Pif ");
             }
-            },
-    components: {
-           'ListeMachine': MachinesList,
-            'MachinesMap': MachinesMap
-    }
+        },
+        // components: {
+        //        'ListeMachine': MachinesList,
+        //         'MachinesMap': MachinesMap
+        // }
 
 
     }
