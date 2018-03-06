@@ -11,6 +11,7 @@
         <div>
             <router-link to="/list">Consulter la liste des machines</router-link>
             <router-link to="/map">Voir la carte</router-link>
+            <router-link to="/machine">Machine</router-link>
 
 
             <router-view></router-view>
