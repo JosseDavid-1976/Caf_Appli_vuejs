@@ -7,10 +7,12 @@ import MachinesMap from './MachinesMap.vue'
 import MachineMachine from './MachineMachine.vue'
 
 Vue.component("listemachine",MachineMachine);
+Vue.component("listesmachines",MachinesList);
 
 Vue.use(VueRouter);
 
 const routes = [
+    // {path: '/list', component: MachineMachine},
     {path: '/list', component: MachinesList},
     {path: '/map', component: MachinesMap},
     {path: '/machine', component:MachineMachine}
